@@ -4,9 +4,6 @@ A collection of useful Linux commands I practiced while learning.
 
 ## 🔧 Basic Commands
 
-
-## 📁 File and Directory Navigation
-
 ```bash
 ls -al    # List all files (including hidden files) in the directory
 pwd       # Prints the current directory you are working in
