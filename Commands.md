@@ -52,6 +52,64 @@ whatis ls        # Get a short description of a command
 alias ll='ls -la'         # Create a shortcut command
 unalias ll                # Remove an existing alias
 ```
+---
+
+## 📄 Input/Output and Text Processing
+
+```bash
+stdout (Standard Output)
+echo "Hello" > file.txt      # Redirects output to a file (overwrites)
+
+stdin (Standard Input)
+cat                         # Takes input from keyboard until EOF (Ctrl+D)
+
+stderr (Standard Error)
+ls missing.txt 2> error.txt  # Redirects errors to a file
+
+pipe and tee
+ls -l | grep ".txt"         # Pipe output from one command into another
+echo "test" | tee output.txt  # Write output to screen and file
+
+env (Environment)
+env                         # Show environment variables
+printenv PATH               # Show specific variable
+
+cut
+cut -d',' -f1 file.csv      # Extract first field from CSV
+
+paste
+paste file1.txt file2.txt   # Combine lines from two files side by side
+
+head
+head -n 5 file.txt          # Show first 5 lines
+
+tail
+tail -n 5 file.txt          # Show last 5 lines
+
+expand and unexpand
+expand file.txt             # Convert tabs to spaces
+unexpand file.txt           # Convert spaces to tabs
+
+join and split
+join file1.txt file2.txt    # Join lines with a common field
+split -l 100 bigfile.txt    # Split file into 100-line chunks
+
+sort
+sort file.txt               # Sort lines alphabetically
+
+tr (Translate)
+tr 'a-z' 'A-Z' < file.txt   # Convert lowercase to uppercase
+
+uniq (Unique)
+uniq file.txt               # Remove adjacent duplicate lines
+
+wc and nl
+wc file.txt                 # Show word/line/character count
+nl file.txt                 # Number each line
+
+grep
+grep "error" file.txt       # Search for lines containing 'error'
+
 ## 🚪 Exiting
 
 ```bash
