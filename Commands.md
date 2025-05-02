@@ -78,7 +78,7 @@ uniq file.txt                  # Removes adjacent duplicate lines
 wc file.txt                    # Displays word, line, and character count
 nl file.txt                    # Adds line numbers to each line of a file
 grep "error" file.txt          # Searches for lines containing the word 'error'
-
+```
 ## 🚪 Exiting
 
 ```bash
