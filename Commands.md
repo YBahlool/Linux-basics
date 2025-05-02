@@ -57,58 +57,27 @@ unalias ll                # Remove an existing alias
 ## 📄 Input/Output and Text Processing
 
 ```bash
-stdout (Standard Output)
-echo "Hello" > file.txt      # Redirects output to a file (overwrites)
-
-stdin (Standard Input)
-cat                         # Takes input from keyboard until EOF (Ctrl+D)
-
-stderr (Standard Error)
-ls missing.txt 2> error.txt  # Redirects errors to a file
-
-pipe and tee
-ls -l | grep ".txt"         # Pipe output from one command into another
-echo "test" | tee output.txt  # Write output to screen and file
-
-env (Environment)
-env                         # Show environment variables
-printenv PATH               # Show specific variable
-
-cut
-cut -d',' -f1 file.csv      # Extract first field from CSV
-
-paste
-paste file1.txt file2.txt   # Combine lines from two files side by side
-
-head
-head -n 5 file.txt          # Show first 5 lines
-
-tail
-tail -n 5 file.txt          # Show last 5 lines
-
-expand and unexpand
-expand file.txt             # Convert tabs to spaces
-unexpand file.txt           # Convert spaces to tabs
-
-join and split
-join file1.txt file2.txt    # Join lines with a common field
-split -l 100 bigfile.txt    # Split file into 100-line chunks
-
-sort
-sort file.txt               # Sort lines alphabetically
-
-tr (Translate)
-tr 'a-z' 'A-Z' < file.txt   # Convert lowercase to uppercase
-
-uniq (Unique)
-uniq file.txt               # Remove adjacent duplicate lines
-
-wc and nl
-wc file.txt                 # Show word/line/character count
-nl file.txt                 # Number each line
-
-grep
-grep "error" file.txt       # Search for lines containing 'error'
+echo "Hello" > file.txt        # Redirects standard output to a file (overwrites)
+cat                            # Takes standard input from keyboard until EOF (Ctrl+D)
+ls missing.txt 2> error.txt    # Redirects standard error to a file
+ls -l | grep ".txt"            # Pipes output from one command into another
+echo "test" | tee output.txt   # Outputs to both terminal and file
+env                            # Displays all environment variables
+printenv PATH                  # Displays the value of a specific environment variable
+cut -d',' -f1 file.csv         # Extracts the first field from a CSV file
+paste file1.txt file2.txt      # Combines lines from two files side by side
+head -n 5 file.txt             # Displays the first 5 lines of a file
+tail -n 5 file.txt             # Displays the last 5 lines of a file
+expand file.txt                # Converts tabs to spaces
+unexpand file.txt              # Converts spaces to tabs
+join file1.txt file2.txt       # Joins lines of two files on a common field
+split -l 100 bigfile.txt       # Splits a file into chunks of 100 lines each
+sort file.txt                  # Sorts lines in a file alphabetically
+tr 'a-z' 'A-Z' < file.txt      # Translates lowercase to uppercase characters
+uniq file.txt                  # Removes adjacent duplicate lines
+wc file.txt                    # Displays word, line, and character count
+nl file.txt                    # Adds line numbers to each line of a file
+grep "error" file.txt          # Searches for lines containing the word 'error'
 
 ## 🚪 Exiting
 
