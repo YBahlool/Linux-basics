@@ -79,6 +79,38 @@ wc file.txt                    # Displays word, line, and character count
 nl file.txt                    # Adds line numbers to each line of a file
 grep "error" file.txt          # Searches for lines containing the word 'error'
 ```
+## 📄 Advanced Text Processing (Vim)
+
+```bash
+vim                 # Opens the vim editor 
+vim fileName        # Opens a file with the vim editor 
+
+vim commands:
+/text               # Searches the text file for the keyword
+
+i - insert text before the cursor
+O - insert text on the previous line
+o - insert text on the next line
+a - append text after the cursor
+A - append text at the end of the line
+
+x - used to cut the selected text also used for deleting characters
+dd - used to delete the current line
+y - yank or copy whatever is selected
+yy - yank or copy the current line
+p - paste the copied text before the cursor
+
+:w - writes or saves the file
+:q - quit out of vim
+:wq - write and then quit
+:q! - quit out of vim without saving the file
+ZZ - equivalent of :wq, but one character faster
+
+
+```
+
+
+
 ## 🚪 Exiting
 
 ```bash
