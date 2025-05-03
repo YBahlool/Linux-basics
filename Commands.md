@@ -84,9 +84,9 @@ grep "error" file.txt          # Searches for lines containing the word 'error'
 ```bash
 vim                 # Opens the vim editor 
 vim fileName        # Opens a file with the vim editor 
+/text               # Searches the text file for the keyword
 
 vim commands:
-/text               # Searches the text file for the keyword
 
 i - insert text before the cursor
 O - insert text on the previous line
@@ -105,8 +105,6 @@ p - paste the copied text before the cursor
 :wq - write and then quit
 :q! - quit out of vim without saving the file
 ZZ - equivalent of :wq, but one character faster
-
-
 ```
 
 
